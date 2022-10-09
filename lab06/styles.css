@@ -1,0 +1,17 @@
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: lightseagreen;
+    font-size: 2em;
+}
+
+.evenrow {
+    background-color: slategray;
+
+h2 {
+    color: olive;
+    font-size: 1.5em;
+}
