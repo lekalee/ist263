@@ -1,0 +1,28 @@
+p {
+    color: salmon;
+    background-color:black;
+    size: 3em;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+}
+
+body {
+    background-color: black;
+    background-image: url("../images/otto.png");
+    background-repeat: repeat;
+}
+
+/* changes color of visited link*/
+a:visited {
+    color: crimson;
+}
+
+a:hover{
+    color: darkmagenta;
+}
+.second {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 20px;
+}

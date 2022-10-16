@@ -1,0 +1,44 @@
+h1 {
+    color: #0256AE;
+    size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2 {
+    color:#356EAC;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: #927647;
+    background-color:#EDDDB9;
+    size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #EDDDB9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav a {
+    color: #CC7A4B;
+    margin-bottom: 30px;
+    border: 10px;
+}
+
+nav a:hover {
+    background-color: #C6A570;
+}
+
+.evenrow {
+    background-color: #D6B685;
+}
+
+other {
+    color: #927647,#C6A570,#CC7A4B,#EDDDB9,#0256AE,#356EAC,#C6A570,#D6B685;
+
+}
+
