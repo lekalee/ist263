@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Centering</title>
+        <meta charset="UTF-8">
+        <style>
+            p { /* inline centering */
+                text-align:center;
+                border:2px solid #fe4566;
+            }
+            .blockcentering { /* block centering */
+                border: 2px dashed #00ee00;
+                width:50%;
+                margin: 0 auto;
+            }
+            div { /* block centering */
+                border:2px solid  #0000dd;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam, omnis voluptatem perspiciatis earum nobis temporibus doloribus ipsum dolore atque veniam vitae eveniet impedit, rerum illum ullam ut commodi excepturi.
+        </p>
+        <p class="blockcentering">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id eius consequatur in soluta tempore quidem animi nam vero doloribus impedit, dolor assumenda neque amet, blanditiis deleniti pariatur tenetur dolores? Ea.
+        </p>
+        <div> this is the flex hack ! </div>
+    </body>
+</html>
