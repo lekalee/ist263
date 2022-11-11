@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <title> Contact </title> 
+        <link rel="stylesheet" href="lab07stylesheet.css">
+        <link rel="stylesheet" href="lab10stylesheet.css">
+
+        <style>
+            body{
+                font-size: 1em;
+            }
+            
+            .pt1{
+                display: flex;
+                background-color: silver;
+                border-radius: 1em;
+            }
+
+            .pt1 p{ padding: 10px;}
+
+
+            .addy, .links {margin: 10px;}
+            .addy{flex: 1;}
+            .links{flex: 2;}
+
+            .pt2{
+                display: flex;
+                padding: 10px;
+                background-color:silver;
+                border-radius: 1em;
+                flex-wrap: wrap;
+            }
+
+            .form, .maps {margin: 10px;}
+            .form{flex: 1; }
+            .maps{flex: 2; }
+
+            .navigation{
+                background-color:lightblue;
+                padding: 10px;
+                border-radius: 1em;
+                max-width: 100%;
+            }
+
+            .skip{
+                background-color:plum;
+                padding: 5px;
+                border: 1px solid  black;
+                position: absolute;
+                top:50px;
+                left:1300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a class="skip" href="#content"> Skip To Content</a>
+
+        <nav class="navigation"> 
+            <a class="a" href="index.html">Home</a><a> <span class="remove"> | </span></a>
+            <a class="b" href="skills.html">Skills</a><a> <span class="remove"> | </span></a>
+            <a class="c" href="contact.html">Contact</a>
+        </nav>
+        
+        <h1 id="content"> Contact </h1>
+
+        <div class="pt1">
+            <div class="addy">
+            <p><strong>Leka Lee-Maeba</strong> </p>
+            <p>343 Hinds Hall, Syracuse, NY 13244</p>
+            <p>Syracuse University</p>
+            </div>
+        <div class="links">
+        <p> <strong>Email: </strong><a href="mailto:lleemaeb@syr.edu">Leka Email</a> </p>
+        <p> <strong>My LinkedIn Page: </strong><a href="https://www.linkedin.com/in/leka-lee-maeba-b732a6197" target="_blank">Leka LinkedIn Page</a> </p>
+
+        <img src="../images/logo-sized.png" alt="Leka standing on the moon wearing Jordan 4s"><br><br>
+        </div>
+        </div>
+        
+        <br>
+
+        <div class="pt2">
+        <div class="form">
+        <h1> IST 263 Form</h1>
+        <form method="post" action="https://formspree.io/f/xlevbdyy"> 
+        <label for="fullname"> Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="university">University Enrolled In :</label>
+        <textarea id="university" name="university"></textarea><br><br>
+        
+        <label> What region is your school located? </label><br>
+        <label for="northeast"> Northeast</label>
+        <input type="radio" id="northeast" name="region" value="northeast" checked><br>
+
+        <label for="southeast"> Southeast </label>
+        <input type="radio" id="southeast" name="region" value="southeast" checked><br>
+        
+        <label for="west"> West </label>
+        <input type="radio" id="west" name="region" value="west" checked><br>
+
+        <label for="southwest"> Southwest</label>
+        <input type="radio" id="southwest" name="region" value="southwest" checked><br>
+
+        <label for="midwest"> Midwest </label>
+        <input type="radio" id="midwest" name="region" value="midwest" checked><br><br>
+
+
+        <label for="international">Are you an international student?</label>
+        <input type="checkbox" id="international" name="international" value="yes"><br>
+
+        <label for="linkedin">Willing to connect on LikedIn?</label>
+        <input type="checkbox" id="linkedin" name="linkedin" value="yes"><br><br>
+
+        <input type="submit" value="submit form">
+        </form>
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1738432246!2d-76.1370966845221!3d43.03777367914728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1663256828336!5m2!1sen!2sus" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </body>
+</html>
