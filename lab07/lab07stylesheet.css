@@ -11,7 +11,7 @@ h2 {
 }
 
 p {
-    color: #927647;
+    color: black;
     background-color:#EDDDB9;
     size: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,7 +24,7 @@ body {
 
 
 nav a {
-    color: #CC7A4B;
+    color: black;
     margin-bottom: 30px;
     border: 10px;
 }
