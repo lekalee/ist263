@@ -64,6 +64,10 @@ a:visited {
     padding-top: 7px;
 }
 
+a:hover{
+    color: #E63946;
+}
+
 
 footer{
     background-image: url(../project/images/BANNER.jpg);
