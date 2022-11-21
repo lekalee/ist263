@@ -58,16 +58,12 @@ body {
 
 
 a:visited {
-    color:#e3f2fd;
+    color:#FFFFFF;
     font-weight: bolder;
     font-size: xx-large;
     padding-top: 7px;
 }
 
-
-a:hover{
-    color: #64b5f6;
-}
 
 footer{
     background-image: url(../project/images/BANNER.jpg);
