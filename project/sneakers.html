@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="stylesheet" href="projectstyles.css">
         
         <title> Jordan Culture </title> 
         <link rel="stylesheet" href="">
@@ -13,51 +13,113 @@
                 padding: 10px;
                 border-radius: 1em;
                 max-width: 100%;
-            }
+        }
+
         .searchbar{
             justify-content: right;
         }
+        
+        .jordancloset{
+            border:2px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #sneakerrow1{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        #sneakerrow2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        #sneakerrow3{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #sneakerrow4{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        
         </style>
     </head>
     <body>
+
+        <a class="skip" href="#content">Skip To Content</a>
+
+
         <nav class="navigation"> 
-            <img src="../project/images/headerl.PNG" class="headerlogo" alt="Jordan Brand Logo" width="80"><br>
-            <a href="home.html">Home</a>
-            <a href="sneakers.html">Sneakers</a>
-            <a href="culture.html">Culture</a>
+            <img src="../project/images/headerl.PNG" class="headerlogo" alt="Jordan Brand Logo" width="80">
+            <div class="links">
+            <a href="home.html"> Home </a>
+            &nbsp;
+            &nbsp;
+            <a href="sneakers.html"> Sneakers </a>
+            &nbsp;
+            &nbsp;
+            <a href="culture.html"> Culture </a>
+            </div>
         </nav>
+
         <h1>AIR JORDAN </h1>
 
+        <div class="jordancloset">
+            <img src="../project/images/dtla.jpeg" alt="Jordans Closet In Store" width="700"><br>
+        </div>
+
         <div>
-            <img src="../project/images/dtla.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <p>Since the very first reveal in 1985, the media, the business community, and the general public have all been anticipating new releases. AIR JORDANs dominate the market in terms of sales and demand, setting higher standards in design and innovation with each new release.
+            <p id="content"> Since the very first reveal in 1985, the media, the business community, and the general public have all been anticipating new releases. AIR JORDANs dominate the market in terms of sales and demand, setting higher standards in design and innovation with each new release.
                 The current generation of AIR JORDANS builds on the long heritage of the brand's unique designs with varying colorways. The franchise continues to lead and reshape the footwear market into the future inspired by Michael Jordan. </p>
         </div>
 
         <h2> TIMELINE </h2>
 
-        <div>
-            <img src="../project/images/jordan1.jpeg" class="img2" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan2.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan3.jpeg" class="img2" alt="Jordans" width="700"><br>
-        </div>
-        <div>
-            <img src="../project/images/jordan4.jpeg" class="img2" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan5.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan6.jpeg" class="img2" alt="Jordans" width="700"><br>
-        </div>
-        <div>
-            <img src="../project/images/jordan7.jpeg" class="img2" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan8.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan9.jpeg" class="img2" alt="Jordans" width="700"><br>
-        </div>
-        <div>
-            <img src="../project/images/jordan10.jpeg" class="img2" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan11.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <img src="../project/images/jordan12.jpeg" class="img2" alt="Jordans" width="700"><br>
+        <div id="sneakerrow1">
+            <a><img src="../project/images/jordan1.jpeg" class="aj1" alt="Air Jordans 1" width="450"><p>Jordan 1</p></a>
+            <a><img src="../project/images/jordan2.jpeg" class="aj2" alt="Air Jordans 2" width="450"><p>Jordan 2</p></a>
+            <a><img src="../project/images/jordan3.jpeg" class="aj3" alt="Air Jordans 3" width="450"><p>Jordan 3</p></a><br>
         </div>
 
+        <div id="sneakerrow2">
+            <a><img src="../project/images/jordan4.jpeg" class="aj4" alt="Air Jordans 4" width="450"><p>Jordan 4</p></a>
+            <a><img src="../project/images/jordan5.jpeg" class="aj5" alt="Air Jordans 5" width="450"><p>Jordan 5</p></a>
+            <a><img src="../project/images/jordan6.jpeg" class="aj6" alt="Air Jordans 6" width="450"><p>Jordan 6</p></a> <br>
+        </div>
 
-        <h1>AIR JORDAN </h1>
+        <div id="sneakerrow3">
+            <a><img src="../project/images/jordan7.jpeg" class="aj7" alt="Air Jordans 7" width="450"><p>Jordan 7</p></a>
+            <a><img src="../project/images/jordan8.jpeg" class="aj8" alt="Air Jordans 8" width="450"><p>Jordan 8</p></a>
+            <a><img src="../project/images/jordan9.jpeg" class="aj9" alt="Air Jordans 9" width="450"><p>Jordan 9</p></a> <br>
+        </div>
+
+        <div id="sneakerrow4">
+            <a><img src="../project/images/jordan10.jpeg" class="aj10" alt="Air Jordans 10" width="450"><p>Jordan 10</p></a>
+            <a><img src="../project/images/jordan11.jpeg" class="aj11" alt="Air Jordans 11" width="450"><p>Jordan 11</p></a>
+            <a><img src="../project/images/jordan12.jpeg" class="aj12" alt="Air Jordans 12" width="450"><p>Jordan 12</p></a> <br>
+
+        </div>
+
+        <footer>
+            <hr>
+                <div class="quote">
+                <a> "The key to success is failure." - Michael Jordan </a>
+                </div>
+        </footer>
 
     </body>
