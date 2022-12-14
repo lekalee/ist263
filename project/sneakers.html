@@ -6,18 +6,8 @@
         <link rel="stylesheet" href="projectstyles.css">
         
         <title> Jordan Culture </title> 
-        <link rel="stylesheet" href="">
 
         <style>
-        .navigation{
-                padding: 10px;
-                border-radius: 1em;
-                max-width: 100%;
-        }
-
-        .searchbar{
-            justify-content: right;
-        }
         
         .jordancloset{
             border:2px;
@@ -55,19 +45,36 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
-
-        
         </style>
+        
+        <script>
+            RandomJordanQuote = function () {
+                var quotes = new Array();
+
+                quotes[0] = "'Heart is what separates the good from the great.' - Michael Jordan";
+                quotes[1] = "'You must expect great things of yourself before you can do them.' - Michael Jordan";
+                quotes[2] = "'The key to success is failure.' - Michael Jordan";
+                quotes[3] = "'If you do the work, you get rewarded. There are no shortcuts in life.' - Michael Jordan";
+                quotes[4] = "'Never say never, because limits, like fears, are often just an illusion.'  - Michael Jordan"; 
+
+                var rand = Math.floor(Math.random()*quotes.length);
+                document.write(quotes[rand]);
+            }
+ 
+            RandomJordanQuote();
+ 
+          </script>
+
     </head>
     <body>
 
-        <a class="skip" href="#content">Skip To Content</a>
+        <a id="skip" href="#content">Skip To Content</a>
 
 
         <nav class="navigation"> 
             <img src="../project/images/headerl.PNG" class="headerlogo" alt="Jordan Brand Logo" width="80">
             <div class="links">
-            <a href="home.html"> Home </a>
+            <a href="index.html"> Home </a>
             &nbsp;
             &nbsp;
             <a href="sneakers.html"> Sneakers </a>
@@ -80,7 +87,7 @@
         <h1>AIR JORDAN </h1>
 
         <div class="jordancloset">
-            <img src="../project/images/dtla.jpeg" alt="Jordans Closet In Store" width="700"><br>
+            <img src="../project/images/dtla.jpeg" class=closet alt="Jordans Closet In Store" width="700"><br>
         </div>
 
         <div>
@@ -118,7 +125,7 @@
         <footer>
             <hr>
                 <div class="quote">
-                <a> "The key to success is failure." - Michael Jordan </a>
+                    <script>RandomJordanQuote();</script>
                 </div>
         </footer>
 

@@ -60,10 +60,14 @@ body {
 
 
 a:visited {
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-weight: bolder;
     font-size: xx-large;
     padding-top: 7px;
+}
+
+a:hover {
+    color: #E63946;
 }
 
 footer{
@@ -82,15 +86,53 @@ footer{
 
 }
 
-.skip{
-    display: flex;
+#skip {
     background-color: skyblue;
     padding: 5px;
     border: 1px solid  black;
     position: absolute;
-    top:100px;
-    left:999;
-    overflow: hidden;
-}
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+  }
+  
+#skip:focus {
+    transform: translateY(0%);
+  }
+
+
+/** culture page media query **/
+@media only screen and (max-width: 600px) {
+    .signed {width: 100%;}
+    .vhs {width: 100%;}
+    .basketball {width: 100%;}
+    }
+
+
+/** sneaker page media query **/
+@media only screen and (max-width: 600px) {
+    .closet {width: 100%;}
+    .aj1 {width: 100%;}
+    .aj2 {width: 100%;}
+    .aj3 {width: 100%;}
+    .aj4 {width: 100%;}
+    .aj5 {width: 100%;}
+    .aj6 {width: 100%;}
+    .aj7 {width: 100%;}
+    .aj8 {width: 100%;}
+    .aj9 {width: 100%;}
+    .aj10 {width: 100%;}
+    .aj11 {width: 100%;}
+    .aj12 {width: 100%;}
+    }
+
+/** culture page media query **/
+@media only screen and (max-width: 600px) {
+    .supremejordans {width: 100%;}
+    .virgil {width: 100%;}
+    .jordanwall {width: 100%;}
+    .sneakerline {width: 100%;}
+    .newsreport {width: 100%;}
+    }
 
 

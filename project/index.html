@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,17 +25,35 @@
         }
         
         </style>
+        
+        <script>
+           RandomJordanQuote = function () {
+               var quotes = new Array();
+
+               quotes[0] = "'Heart is what separates the good from the great.' - Michael Jordan";
+               quotes[1] = "'You must expect great things of yourself before you can do them.' - Michael Jordan";
+               quotes[2] = "'The key to success is failure.' - Michael Jordan";
+               quotes[3] = "'If you do the work, you get rewarded. There are no shortcuts in life.' - Michael Jordan";
+               quotes[4] = "'Never say never, because limits, like fears, are often just an illusion.'  - Michael Jordan"; 
+
+               var rand = Math.floor(Math.random()*quotes.length);
+               document.write(quotes[rand]);
+           }
+
+           RandomJordanQuote();
+
+         </script>
 
     </head>
 
     <body>
 
-        <a class="skip" href="#content">Skip To Content</a>
+        <a id="skip" href="#content">Skip To Content</a>
         
         <nav class="navigation"> 
             <img src="../project/images/headerl.PNG" class="headerlogo" alt="Jordan Brand Logo" width="80">
             <div class="links">
-            <a href="home.html"> Home </a>
+            <a href="index.html"> Home </a>
             &nbsp;
             &nbsp;
             <a href="sneakers.html"> Sneakers </a>
@@ -47,7 +66,7 @@
         <h1> AIR JORDAN </h1>
 
         <div class="img1">
-            <img src="../project/images/airjordan.jpeg" alt="Jordan1s On Basketball Court" width="800"><br>
+            <img src="../project/images/airjordan.jpeg" class="basketball" alt="Jordan1s On Basketball Court" width="800"><br>
         </div>
 
         <div>
@@ -56,8 +75,8 @@
         </div>
 
         <div class=img2>
-            <img src="../project/images/vhs.jpeg" alt="VHS Jordans" width="650"><br>
-            <img src="../project/images/pic.jpeg"  alt="Signed Jordans" width="650"><br>
+            <img src="../project/images/vhs.jpeg" class="vhs" alt="VHS Jordans" width="650"><br>
+            <img src="../project/images/pic.jpeg" class="signed" alt="Signed Jordans" width="650"><br>
         </div>
 
         <div>                    
@@ -70,7 +89,7 @@
             <footer>
                 <hr>
                     <div class="quote">
-                    <a> "Heart is what separates the good from the great." - Michael Jordan </a>
+                        <script>RandomJordanQuote();</script>
                     </div>
             </footer>
     </body>

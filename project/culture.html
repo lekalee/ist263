@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="projectstyles.css">
         
         <title> Jordan Culture </title> 
-        <link rel="stylesheet" href="">
 
         <style>
         .navigation{
@@ -26,19 +25,24 @@
         .newsreport{
             display: flex;
             justify-content: center;
+            justify-content: space-around;
+            border-radius: 70px;
             flex-wrap: wrap;
+
         }
 
         #toprow{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            justify-content:space-around;
         }
 
         #bottomrow{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            justify-content:space-around;
         }
 
         #video{
@@ -48,17 +52,36 @@
             border-radius: 50px;
         }
 
+    
+
         </style>
+
+    <script>
+        RandomJordanQuote = function () {
+        var quotes = new Array();
+
+        quotes[0] = "'Heart is what separates the good from the great.' - Michael Jordan";
+        quotes[1] = "'You must expect great things of yourself before you can do them.' - Michael Jordan";
+        quotes[2] = "'The key to success is failure.' - Michael Jordan";
+        quotes[3] = "'If you do the work, you get rewarded. There are no shortcuts in life.' - Michael Jordan";
+        quotes[4] = "'Never say never, because limits, like fears, are often just an illusion.'  - Michael Jordan"; 
+           
+        var rand = Math.floor(Math.random()*quotes.length);
+        document.write(quotes[rand]);
+        }
+
+        RandomJordanQuote();
+    </script>
     </head>
     <body>
 
-        <a class="skip" href="#content">Skip To Content</a>
+        <a id="skip" href="#content">Skip To Content</a>
 
 
         <nav class="navigation"> 
             <img src="../project/images/headerl.PNG" class="headerlogo" alt="Jordan Brand Logo" width="80">
             <div class="links">
-            <a href="home.html"> Home </a>
+            <a href="index.html"> Home </a>
             &nbsp;
             &nbsp;
             <a href="sneakers.html"> Sneakers </a>
@@ -75,7 +98,7 @@
         </div>
 
         <div  class="newsreport">
-            <img src="../project/images/news.jpeg" alt="Jordan Release News Report" width="700"><br>
+            <img src="../project/images/news.jpeg" alt="Jordan Release News Report" width="100%"><br>
         </div>
 
         <div>
@@ -84,33 +107,34 @@
         
         </div>
 
-        <div id="toprow">
-            <img src="../project/images/supreme.jpeg" class="img2" alt="Jordans" width="700"><br>
-            <img src="../project/images/virgil.webp" class="img1" alt="Jordans" width="700"><br>
-        </div>
-
-        <div id="bottomrow">
-            <img src="../project/images/wall.jpeg" class="img1" alt="Jordans" width="700"><br>
-            <img src="../project/images/line.jpeg" class="img1" alt="Jordans" width="700"><br>
-
-        </div>
         <div>
             <p> The sneaker industry has been greatly impacted by Air Jordan. Converse sneakers were popular before Jordans, but Air Jordans revolutionized the industry. Retail prices for the original Air Jordans, which debuted in 1985, were in the range of $65. These sneakers and the most recent ones, however, have only increased in value; now ranging in the hundreds and thousands. They have sponsored several NBA players, including Luka Doncic, Carmelo Anthony, Jayson Tatum, and many more, and have other sponsorship deals outside basketball.</p>
+        </div>
+
+        <div id="toprow">
+            <img src="../project/images/supreme.jpeg" class="supremejordans" alt="Supreme Jordans" width="680"><br>
+            <img src="../project/images/virgil.webp" class="virgil" alt="Virgil signing jordans" width="680"><br>
+        </div>
+        <br><br>
+    
+        <div id="bottomrow">
+            <img src="../project/images/wall.jpeg" class="jordanwall" alt="Jordan Wall Memorial" width="680"><br>
+            <img src="../project/images/line.jpeg" class="sneakerline" alt="Line  of people waiting to buy sneakers" width="680"><br>
+
         </div>
 
         <div><p>High fashion collaborations in recent years have further increased the value of Air Jordan shoes. Designers like Virgil Abloh created a somewhat untouchable stance on Jordans, he created a collaboration with off-white known as “the ten” which shot Jordans prices up to the thousands. Those shoes had and continue to have a huge effect on pop culture. Even designers like Christian Dior wanted their print on the Jordan brand. After making their debut at the Dior Men Pre-Fall 2020 show, the Jordan 1 silhouette was given a makeover by Dior's Italian leatherwork and logo print, and the sneakers were released in mid-pandemic in June 2020. Where the $2,000 sneaker sold out within minutes even during a financial crisis. After that, their resale value immediately soared to the tens of thousands. Jordan has multiple collaborations with several athletes and artists and the famous complex show “sneaker shopping” often shines a light on the brand when celebrities get to talk through their experiences with the brand. Not many people and companies are as timeless as Michael Jordan and the Jordan brand. The introduction of Air Jordan altered basketball, the place of sports characters in popular culture around the world, and the fashion business.</p></div>
 
 
         <h2> Sneaker Shopping: Celebrities Remember Their First Air Jordans </h2>
-        <div id="video">            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sOYV_aaUaV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <div id="video"> 
+            <iframe width="966" height="543" src="https://www.youtube.com/embed/sOYV_aaUaV4" title="Sneaker Shopping: Celebrities Remember Their First Air Jordans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
         </div>
 
         <footer>
             <hr>
                 <div class="quote">
-                <a> "You must expect great things of yourself before you can do them." - Michael Jordan </a>
+                    <script>RandomJordanQuote();</script>
                 </div>
         </footer>
 
